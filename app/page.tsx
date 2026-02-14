@@ -1,3 +1,4 @@
+import UserCard from "@/components/UserCard";
 import { getUsers } from "@/lib/api";
 
 export default async function Home() {
@@ -7,13 +8,12 @@ export default async function Home() {
     <main style={{ padding: 24 }}>
       <h1>Mesh Directory</h1>
 
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {user.name} ({user.email})
-          </li>
-        ))}
-      </ul>
+      <div style={{ display: "grid", gap: 12 }}>
+  {users.map((user) => (
+    <UserCard key={user.id} user={user} />
+  ))}
+      </div>
+
     </main>
   );
 }

@@ -1,0 +1,24 @@
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: white;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.meta {
+  margin: 6px 0 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.company {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
