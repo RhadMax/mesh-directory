@@ -1,5 +1,6 @@
-import UserCard from "@/components/UserCard";
+//import UserCard from "@/components/UserCard";
 import { getUsers } from "@/lib/api";
+import UserList from "@/components/UserList";
 
 export default async function Home() {
   const users = await getUsers();
@@ -7,13 +8,7 @@ export default async function Home() {
   return (
     <main style={{ padding: 24 }}>
       <h1>Mesh Directory</h1>
-
-      <div style={{ display: "grid", gap: 12 }}>
-  {users.map((user) => (
-    <UserCard key={user.id} user={user} />
-  ))}
-      </div>
-
+      <UserList initialUsers={users} />
     </main>
   );
 }
