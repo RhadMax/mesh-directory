@@ -1,5 +1,6 @@
 import styles from "./UserCard.module.css";
 import { User } from "@/lib/types";
+import Link from "next/link";
 
 type Props = {
   user: User;
@@ -7,10 +8,12 @@ type Props = {
 
 export default function UserCard({ user }: Props) {
   return (
-    <div className={styles.card}>
-      <h2 className={styles.name}>{user.name}</h2>
-      <p className={styles.meta}>{user.email}</p>
-      <p className={styles.company}>{user.company?.name}</p>
-    </div>
+    <Link href={`/users/${user.id}`} className={styles.cardLink}>
+      <div className={styles.card}>
+        <h2 className={styles.name}>{user.name}</h2>
+        <p className={styles.meta}>{user.email}</p>
+        <p className={styles.company}>{user.company?.name}</p>
+      </div>
+    </Link>
   );
 }

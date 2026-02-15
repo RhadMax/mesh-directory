@@ -22,3 +22,19 @@
   color: #6b7280;
   font-size: 0.9rem;
 }
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cardLink:focus-visible .card {
+  outline: 2px solid #9ca3af;
+  outline-offset: 2px;
+}
+
+.card:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}

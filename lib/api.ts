@@ -12,12 +12,17 @@ export async function getUsers(): Promise<User[]> {
   return res.json();
 }
 
-export async function getUser(id: number): Promise<User> {
+export async function getUser(id: number): Promise<User | null> {
   const res = await fetch(`${BASE_URL}/users/${id}`);
 
   if (!res.ok) {
+    if (res.status === 404) return null;
     throw new Error("Failed to fetch user");
   }
 
-  return res.json();
+  const data = (await res.json()) as Partial<User>;
+
+  if (typeof data.id !== "number") return null;
+
+  return data as User;
 }
