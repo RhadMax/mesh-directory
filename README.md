@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mesh Directory
 
-## Getting Started
+A lightweight user directory interface built with Next.js and TypeScript. The project explores modern React architecture, component-driven UI design, and data-driven filtering within a responsive directory layout.
 
-First, run the development server:
+This repo serves as a foundation for experimenting with scalable UI structure, state-driven rendering, and iterative product polish.
 
-```bash
+---
+
+## Features
+
+- User directory interface with searchable/filterable list
+- Component-driven layout using modern Next.js patterns
+- TypeScript typing for data and UI state
+- Responsive design foundations
+- Clean separation between UI structure and data layer
+
+---
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS / styling approach (update if Tailwind or other used)
+
+---
+
+## Project Goals
+
+- Explore modern Next.js app structure
+- Practice typed UI state management
+- Build a reusable directory layout pattern
+- Create a foundation for iterative UI/UX refinement
+
+---
+
+## Running Locally
+
+### Install
+npm install
+
+### Start
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure (high level)
 
-## Learn More
+- app/ or pages/ — routing and page composition
+- components/ — reusable UI elements
+- types/ — shared TypeScript definitions
+- data/ or API layer — directory data source
 
-To learn more about Next.js, take a look at the following resources:
+(Adjust to match actual structure if desired.)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
 
-## Deploy on Vercel
+- Figma-driven UI refinement and design iteration
+- API-backed data source instead of static data
+- Enhanced filtering and sorting capabilities
+- Accessibility improvements
+- Performance optimizations and memoization where needed
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+
+This project is intentionally lightweight and serves as an iterative playground for UI and architectural exploration rather than a fully featured product.
